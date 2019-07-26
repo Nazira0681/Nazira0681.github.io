@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'gora';
+    src: url('../fonts/gora-free_2-webfont.woff2') format('woff2'),
+         url('../fonts/gora-free_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body,html{
     height:100%;width:100%;
     padding:0;
@@ -40,7 +49,7 @@ p {
  .logo {
      display: inline-block;
      width: 20%;
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'gora';
  }
 
 .logo__text {
@@ -67,6 +76,7 @@ p {
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 .menu__icon {
     vertical-align: middle;
@@ -91,9 +101,8 @@ p {
     font-family: 'Open Sans', sans-serif;
 }    
 .banner {
-    margin: 80px auto 57px;
-    top: 155px;
-    left: 179;
+    margin: 0px auto;
+    padding: 60px 0;
     text-align: center;
     height: 486px;
 }
@@ -103,22 +112,35 @@ p {
     color: #ffff;
     padding-top: 66px;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 70px;
 }
-.features__title1 {
+.section__title {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
     font-size: 49px;
     font-weight: 700;
     margin-bottom: 63px;
-    padding-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
 }
-
+   
+.features__descr-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}    
+    
+    
 .features__descr-list {
     text-align: left;
     margin-bottom: 102px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
+}
+
+.features__descr-itom {
+    list-style-type: circle;
+    color: #ffff;
+    padding-left: 19px;
 }
 
 .features__icon{
@@ -128,6 +150,7 @@ p {
     background: #f89513;
     border-radius: 50%;
     position: relative;
+    margin-bottom: 20px;
 }
 .features__icon-picture {
     position: absolute;
@@ -138,24 +161,23 @@ p {
 .features__item{
     display: inline-block;
     margin-right: 74px;
-    width: 28%;
+    width: 200px;
     text-align: center;
     vertical-align: top;
 }
+.features__list {
+    text-align: center;
+}
 .features__title {
-    margin-top: 42px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 11px;
     text-transform: uppercase;
-    line-height: 51.38px;
     margin-bottom: 31px;
+    letter-spacing: 2px;
 }
 .features__item:last-child {
     margin-right: 0px;
-}
-.news {
-    padding-top: 70px;
 }
 
 .news__content-left {
@@ -187,22 +209,35 @@ p {
 .news__content-text {
     font-family: 'Roboto', sans-serif;
     color: #656464;
-    font-size: 14px;  
+    font-size: 18px;  
     font-weight: 300;
+    line-height: 30px;
 }
 .news__content-item {
     display: inline-block;
     border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.news__content-icon {
+    margin-right: 20px;
 }
 .news__content-paragraph {
     display: inline-block;
     vertical-align: top;
-    width: 70%;
+    width: 74%;
 }
 .news__top {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #221f1f;
+    margin-bottom: 20px;
+}
+.news__top-date {
+    color: #656464;    
 }
 .pagination {
     font-family: 'Roboto', sans-serif;
@@ -213,8 +248,11 @@ p {
 .pagination-list{
     display: inline-block;
   }
+
+  
 .pagination__pages-item {
     display: inline-block;
+    text-decoration: none;
 }
 .pagination__pages-list {
     display: inline-block;
@@ -222,12 +260,24 @@ p {
 .pagination__controlls {
     display: inline-block;
 }
-
+.pagination__pages-link {
+    text-decoration: none;
+    color: #221f1f;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+}
+.pagination__pages-link_current {
+    background: #27273e;
+    color: #f79412;
+}
 .footer {
     background: #131415;
     text-align: center;
 }
- .footer-text {
+ .footer__text {
      color: #ffff;
      font-family: 'Open Sans', sans-serif;
      font-size: 14px;
@@ -236,6 +286,7 @@ p {
      width: 30%;
      margin-top: 14px;
      vertical-align: middle;
+     text-align: left;
  }  
  .footer__networks {
     color: #ffff;
@@ -246,24 +297,35 @@ p {
     width: 35%;
     vertical-align: middle;
  }
- .logo-link {
+ .logo__link {
     display: inline-block;
     width: 20%;
+    text-decoration: none;
 }
 .footer__title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'gora';
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 9px;
 }
-.footer__networks-icon {
-    background-color: #27273e;
+.footer__networks-item {
     background-color: #d0d0d0;
     display: inline-block;
+    vertical-align: middle;
     text-align: right;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-top: 21px;
-    transform: translate(-50%,-50%);
+    position: relative;
+}
+.footer__networks-item:hover {
+    background-color: #f89513;
+    
+}    
+.footer__networks-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

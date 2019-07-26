@@ -52,7 +52,7 @@
         </section>
         <section class="features">
             <div class="container">
-                <div class="features__title1">Особенности</div>
+                <h1 class="section__title">Особенности</h1>
                 <div class="features__content">
                     <ul class="features__list">
                         <li class="features__item">
@@ -109,7 +109,7 @@
         </section>
         <section class="news">
             <div class="container">
-                <div class="titlr">Последние новости</div>
+                <h2 class="section__title">Последние новости</h2>
                 <div class="news__content">
                     <div class="news__content-left">
                         <ul class="news__content-list">
@@ -153,8 +153,8 @@
                     </div>
                     <div class="news__content-right">
                         <div class="news__top">
-                            <h4 class="news__top">топ новостей</h4>
-                            <div class="news_time">за сентябрь</div>
+                            <h4 class="news__top-text">топ новостей</h4>
+                            <div class="news__top-date">за сентябрь</div>
                         </div>
                         <div class="news__pictures">
                         <img src="../../img/news/men.png" alt="мужчина" class="news__pictures-list">
@@ -171,31 +171,31 @@
                     Страница 1 из 7
                 </div>
                 <div class="pagination__controlls">
-                    <a href="" class="pagination__pages-item">></a>
+                    <a href="" class="pagination__pages-item"><</a>
                     <ul class="pagination__pages-list">
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">1</a>
+                            <a href="#" class="pagination__pages-link pagination__pages-link_current">1</a>
                         </li>
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">2</a>
+                            <a href="#" class="pagination__pages-link">2</a>
                         </li>
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">3</a>
+                            <a href="#" class="pagination__pages-link">3</a>
                         </li>
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">4</a>
+                            <a href="#" class="pagination__pages-link">4</a>
                         </li>
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">5</a>
+                            <a href="#" class="pagination__pages-link">5</a>
                         </li>
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">6</a>
+                            <a href="#" class="pagination__pages-link">6</a>
                         </li>
                         <li class="pagination__pages-item">
-                            <a href="#" class="pagination_pages-link">7</a>
+                            <a href="#" class="pagination__pages-link">7</a>
                         </li>
                     </ul>
-                    <a href="" class="pagination__pages-item"><</a>
+                    <a href="" class="pagination__pages-item">></a>
                 </div>
             </div>
         </section>
@@ -203,38 +203,46 @@
     </div>
       <footer class="footer"> 
           <div class="container">
-            <div class="footer-text">
-                    <p class="footer">
+            <div class="footer__text">
+                    <p class="footer__copy">
                             Сделано с любовью и старанием
                             на курсе «HTML + CSS» в LoftSchool.
                             Автор работы: Прохладов Вадим
                     </p> 
             </div>  
             <div class="logo">
-                <a href="/" class="logo-link">
-                    <h4 class="logo__text">Афродита</h4>
+                <a href="/" class="logo__link">
+                    <span class="logo__text">Афродита</span>
                 </a>
             </div>
             <div class="footer__networks">
                 <div class="footer__title">Наши социальные сети</div>
-                <ul class="footer__networks__icon">
-                    <li class="footer__networks-icon">
-                        <a href="footer__networks__png" class="footter">
-                            <img src="../img/vk.png" alt="ВК" class="footer__networks__icon">
+                <ul class="footer__networks-list">
+                    <li class="footer__networks-item">
+                        <a href="#" class="footer__networks-link">
+                            <img src="../img/vk.png" alt="ВК" class="footer__networks-icon">
                         </a>
                     </li>
-                <li class="footer__networks-icon">
-                    <img src="../img/f.png" alt="ф" class="footer__networks__icon">
-                </li>
-                <li class="footer__networks-icon">
-                    <img src="../img/g.png" alt="джи" class="footer__network__icon">
-                </li>
-                <li class="footer__networks-icon">
-                    <img src="../img/tw.png" alt="tw" class="footer__networks__icon">
-                </li>
-                <li class="footer__networks-icon">
-                    <img src="../img/mail.png" alt="mail" class="footer__networks__icon">
-                </li>
+                    <li class="footer__networks-item">
+                        <a href="#" class="footer__networks-link">
+                            <img src="../img/f.png" alt="ф" class="footer__networks-icon"> 
+                        </a>   
+                    </li>
+                    <li class="footer__networks-item">
+                        <a href="#" class="footer__networks-link">
+                            <img src="../img/g.png" alt="джи" class="footer__network-icon">
+                        </a>
+                     </li>
+                    <li class="footer__networks-item">
+                        <a href="#" class="footer__networks-link">
+                            <img src="../img/tw.png" alt="tw" class="footer__networks-icon">
+                        </a>
+                    </li>
+                    <li class="footer__networks-item">
+                        <a href="#" class="footer__networks-link">
+                            <img src="../img/mail.png" alt="mail" class="footer__networks-icon">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
